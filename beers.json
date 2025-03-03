@@ -30,5 +30,133 @@
         "abv": "9.0",
         "ibu": "90",
         "description": "A bold and hoppy IPA with a strong malt backbone."
+    },
+    {
+        "name": "Pliny the Elder",
+        "brand": "Russian River",
+        "style": "Double IPA",
+        "abv": "8.0",
+        "ibu": "100",
+        "description": "A legendary double IPA with intense pine and citrus flavors."
+    },
+    {
+        "name": "Founders Kentucky Breakfast Stout",
+        "brand": "Founders",
+        "style": "Imperial Stout",
+        "abv": "12.0",
+        "ibu": "70",
+        "description": "A rich and boozy stout aged in bourbon barrels with coffee and chocolate flavors."
+    },
+    {
+        "name": "Allagash White",
+        "brand": "Allagash",
+        "style": "Witbier",
+        "abv": "5.2",
+        "ibu": "13",
+        "description": "A refreshing Belgian-style wheat beer with notes of orange peel and coriander."
+    },
+    {
+        "name": "Weihenstephaner Hefeweissbier",
+        "brand": "Weihenstephan",
+        "style": "Hefeweizen",
+        "abv": "5.4",
+        "ibu": "14",
+        "description": "A classic German wheat beer with banana and clove aromas."
+    },
+    {
+        "name": "Chimay Blue",
+        "brand": "Chimay",
+        "style": "Belgian Strong Ale",
+        "abv": "9.0",
+        "ibu": "35",
+        "description": "A rich and complex Belgian ale with dark fruit and caramel flavors."
+    },
+    {
+        "name": "Westvleteren 12",
+        "brand": "Trappist Brewery Westvleteren",
+        "style": "Quadrupel",
+        "abv": "10.2",
+        "ibu": "39",
+        "description": "A legendary Trappist beer with deep caramel and dark fruit notes."
+    },
+    {
+        "name": "Modelo Especial",
+        "brand": "Grupo Modelo",
+        "style": "Lager",
+        "abv": "4.4",
+        "ibu": "18",
+        "description": "A smooth, crisp, and well-balanced Mexican lager."
+    },
+    {
+        "name": "Blue Moon Belgian White",
+        "brand": "Blue Moon Brewing Co.",
+        "style": "Witbier",
+        "abv": "5.4",
+        "ibu": "9",
+        "description": "A smooth wheat beer with hints of orange and coriander."
+    },
+    {
+        "name": "Lagunitas IPA",
+        "brand": "Lagunitas",
+        "style": "IPA",
+        "abv": "6.2",
+        "ibu": "52",
+        "description": "A well-balanced IPA with citrus and pine hop flavors."
+    },
+    {
+        "name": "Stone Arrogant Bastard",
+        "brand": "Stone Brewing",
+        "style": "American Strong Ale",
+        "abv": "7.2",
+        "ibu": "100",
+        "description": "A bold, aggressive ale with caramel malt and strong hop bitterness."
+    },
+    {
+        "name": "Bell's Two Hearted Ale",
+        "brand": "Bell's Brewery",
+        "style": "IPA",
+        "abv": "7.0",
+        "ibu": "55",
+        "description": "A well-balanced IPA with floral and citrusy hop flavors."
+    },
+    {
+        "name": "Samuel Adams Boston Lager",
+        "brand": "Samuel Adams",
+        "style": "Lager",
+        "abv": "5.0",
+        "ibu": "30",
+        "description": "A full-bodied lager with caramel and toasty malt flavors."
+    },
+    {
+        "name": "Hoegaarden",
+        "brand": "Hoegaarden Brewery",
+        "style": "Witbier",
+        "abv": "4.9",
+        "ibu": "15",
+        "description": "A classic Belgian wheat beer with citrus and coriander spice."
+    },
+    {
+        "name": "Deschutes Black Butte Porter",
+        "brand": "Deschutes Brewery",
+        "style": "Porter",
+        "abv": "5.5",
+        "ibu": "30",
+        "description": "A smooth and malty porter with hints of chocolate and coffee."
+    },
+    {
+        "name": "Pilsner Urquell",
+        "brand": "Plzeňský Prazdroj",
+        "style": "Pilsner",
+        "abv": "4.4",
+        "ibu": "40",
+        "description": "The original Pilsner with a crisp, clean malt profile and noble hop bitterness."
+    },
+    {
+        "name": "Dale's Pale Ale",
+        "brand": "Oskar Blues",
+        "style": "Pale Ale",
+        "abv": "6.5",
+        "ibu": "65",
+        "description": "A hoppy American pale ale with pine and citrus notes."
     }
 ]
