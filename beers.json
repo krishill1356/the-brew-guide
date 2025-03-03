@@ -1,0 +1,34 @@
+[
+    {
+        "brand": "Guinness",
+        "name": "Guinness Draught",
+        "style": "Stout",
+        "abv": "4.2",
+        "ibu": "45",
+        "image": "images/guinness-draught.jpg"
+    },
+    {
+        "brand": "Founders",
+        "name": "Breakfast Stout",
+        "style": "Stout",
+        "abv": "8.3",
+        "ibu": "60",
+        "image": "images/founders-breakfast-stout.jpg"
+    },
+    {
+        "brand": "Sierra Nevada",
+        "name": "Hazy Little Thing",
+        "style": "IPA",
+        "abv": "6.7",
+        "ibu": "35",
+        "image": "images/sierra-hazy.jpg"
+    },
+    {
+        "brand": "Dogfish Head",
+        "name": "90 Minute IPA",
+        "style": "Imperial IPA",
+        "abv": "9.0",
+        "ibu": "90",
+        "image": "images/dogfish-90min.jpg"
+    }
+]
