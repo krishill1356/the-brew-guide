@@ -43,7 +43,7 @@ function displayResults(results) {
         const beerCard = document.createElement('div');
         beerCard.classList.add('beer-card');
         beerCard.innerHTML = `
-            <img src="https://source.unsplash.com/300x200/?${encodeURIComponent(beer.name + ' beer')}" alt="${beer.name}" class="beer-image">
+            <img src="https://source.unsplash.com/300x200/?craftbeer,hipster,${encodeURIComponent(beer.name)}" alt="${beer.name}" class="beer-image">
             <h3>${beer.name}</h3>
             <p><strong>Brewery:</strong> ${beer.brand}</p>
             <p><strong>Style:</strong> ${beer.style}</p>
