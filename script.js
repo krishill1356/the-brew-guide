@@ -1,11 +1,23 @@
 let beers = [];
 
-fetch('beers.json')
-    .then(response => response.json())
-    .then(data => beers = data);
+document.addEventListener("DOMContentLoaded", () => {
+    fetch('beers.json')
+        .then(response => response.json())
+        .then(data => {
+            beers = data;
+        })
+        .catch(error => console.error("Error loading beers.json:", error));
+
+    document.getElementById('searchBar').addEventListener('input', searchBeer);
+});
 
 function searchBeer() {
-    const query = document.getElementById('searchBar').value.toLowerCase();
+    const query = document.getElementById('searchBar').value.trim().toLowerCase();
+    if (!query) {
+        displayResults([]);
+        return;
+    }
+    
     const results = beers.filter(beer => 
         beer.name.toLowerCase().includes(query) || 
         beer.style.toLowerCase().includes(query) || 
@@ -18,6 +30,11 @@ function searchBeer() {
 function displayResults(results) {
     const beerList = document.getElementById('beerList');
     beerList.innerHTML = '';
+
+    if (results.length === 0) {
+        beerList.innerHTML = '<p>No beers found. Try another search!</p>';
+        return;
+    }
 
     results.forEach(beer => {
         const beerCard = document.createElement('div');
@@ -36,9 +53,11 @@ function displayResults(results) {
 
 // Google Maps API
 function initMap() {
-    const map = new google.maps.Map(document.getElementById("breweryMap"), {
-        center: { lat: 40.7128, lng: -74.0060 },
-        zoom: 12
+    const breweryMapElement = document.getElementById("breweryMap");
+    if (!breweryMapElement) return;
+    
+    const map = new google.maps.Map(breweryMapElement, {
+        center: { lat: 51.5074, lng: -0.1278 }, // Centered on London
+        zoom: 10
     });
 }
-
