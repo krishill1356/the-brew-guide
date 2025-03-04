@@ -1,7 +1,6 @@
 let beers = [];
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Ensure beers.json loads correctly
     fetch('beers.json')
         .then(response => {
             if (!response.ok) throw new Error("Failed to load beers.json");
@@ -9,26 +8,28 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .then(data => {
             beers = data;
-            console.log("Beers loaded successfully:", beers); // Debugging
+            console.log("Beers loaded successfully:", beers);
         })
         .catch(error => console.error("Error loading beers.json:", error));
-
-    // Attach event listener to button
+    
     document.getElementById('searchForm').addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent form from reloading page
+        event.preventDefault();
         searchBeer();
+    });
+    
+    document.getElementById('beerForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        addBeer();
     });
 });
 
-// Function to search for beers
 function searchBeer() {
     const query = document.getElementById('searchBar').value.trim().toLowerCase();
-
     if (!query) {
-        displayResults([]); // Clear results if input is empty
+        displayResults([]);
         return;
     }
-
+    
     const results = beers.filter(beer => 
         beer.name.toLowerCase().includes(query) || 
         beer.style.toLowerCase().includes(query) || 
@@ -38,7 +39,6 @@ function searchBeer() {
     displayResults(results);
 }
 
-// Function to display search results
 function displayResults(results) {
     const beerList = document.getElementById('beerList');
     beerList.innerHTML = '';
@@ -63,7 +63,27 @@ function displayResults(results) {
     });
 }
 
-// Google Maps API Initialization
+function addBeer() {
+    const name = document.getElementById('beerName').value.trim();
+    const brand = document.getElementById('beerBrand').value.trim();
+    const style = document.getElementById('beerStyle').value.trim();
+    const abv = document.getElementById('beerAbv').value.trim();
+    const ibu = document.getElementById('beerIbu').value.trim();
+    const description = document.getElementById('beerDescription').value.trim();
+    
+    if (!name || !brand || !style || !abv || !ibu || !description) {
+        alert("Please fill in all beer details!");
+        return;
+    }
+    
+    const newBeer = { name, brand, style, abv, ibu, description };
+    beers.push(newBeer);
+    
+    displayResults(beers);
+    document.getElementById('beerForm').reset();
+}
+
+// Google Maps API
 function initMap() {
     const breweryMapElement = document.getElementById("breweryMap");
     if (!breweryMapElement) return;
