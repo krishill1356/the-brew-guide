@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.json())
         .then(data => {
             beers = data;
-            console.log("Beers loaded successfully:", beers);
         })
         .catch(error => console.error("Error loading beers.json:", error));
     
@@ -44,36 +43,19 @@ function displayResults(results) {
         const beerCard = document.createElement('div');
         beerCard.classList.add('beer-card');
         beerCard.innerHTML = `
+            <img src="https://source.unsplash.com/300x200/?${encodeURIComponent(beer.name + ' beer')}" alt="${beer.name}" class="beer-image">
             <h3>${beer.name}</h3>
-            <p><strong>Brand:</strong> ${beer.brand}</p>
+            <p><strong>Brewery:</strong> ${beer.brand}</p>
             <p><strong>Style:</strong> ${beer.style}</p>
             <p><strong>ABV:</strong> ${beer.abv}%</p>
-            <p><strong>IBU:</strong> ${beer.ibu}</p>
             <p>${beer.description}</p>
-            <button onclick="findInPubs('${beer.location}')">Find in Pubs</button>
-            <button onclick="buyOnline('${beer.name}')">Buy Online</button>
+            <a href="https://www.google.com/search?q=buy+${encodeURIComponent(beer.name)}+beer+online" target="_blank">
+                <button>Buy Online</button>
+            </a>
+            <a href="https://www.google.com/maps/search/${encodeURIComponent(beer.location)}" target="_blank">
+                <button>Find Brewery</button>
+            </a>
         `;
         beerList.appendChild(beerCard);
-    });
-}
-
-function findInPubs(location) {
-    const encodedLocation = encodeURIComponent(location);
-    window.open(`https://www.google.com/maps/search/pubs+serving+${encodedLocation}`);
-}
-
-function buyOnline(beerName) {
-    const encodedBeer = encodeURIComponent(beerName);
-    window.open(`https://www.google.com/search?q=buy+${encodedBeer}+beer+online`);
-}
-
-// Google Maps API
-function initMap() {
-    const breweryMapElement = document.getElementById("breweryMap");
-    if (!breweryMapElement) return;
-    
-    const map = new google.maps.Map(breweryMapElement, {
-        center: { lat: 51.5074, lng: -0.1278 }, // London Default
-        zoom: 10
     });
 }
