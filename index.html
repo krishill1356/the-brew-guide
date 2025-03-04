@@ -3,24 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Next Beer</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Next Beer | Craft Beer Finder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: #121212;
+            color: #FFFFFF;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #000;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .logo {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #00A3E0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        nav ul li a:hover {
+            color: #00A3E0;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://source.unsplash.com/1600x600/?beer,brewery') no-repeat center center/cover;
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        #searchForm {
+            margin-top: 20px;
+        }
+
+        #searchBar {
+            padding: 12px;
+            width: 60%;
+            max-width: 400px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        button {
+            background: #00A3E0;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 25px;
+            color: white;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        button:hover {
+            background: #0078A3;
+        }
+
+        /* Beer List */
+        .section-title {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
+            margin-top: 40px;
+        }
+
+        .beer-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .beer-item {
+            background: #1E1E1E;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .beer-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Hipster Vibes Section */
+        .hipster-vibes {
+            margin-top: 50px;
+            padding: 40px;
+            background: #1E1E1E;
+            border-radius: 10px;
+        }
+
+        .hipster-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .hipster-gallery img {
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #777;
+            padding: 20px;
+            background: #000;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>My Next Beer 🍻</h1>
-        <form id="searchForm">
-            <input type="text" id="searchBar" placeholder="Enter beer name, style, or tag..." aria-label="Search beer">
-            <button type="submit">Find My Next Beer</button>
-        </form>
+        <div class="logo">🍺 My Next Beer</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Beers</a></li>
+                <li><a href="#">Breweries</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
     </header>
-    
+
+    <section class="hero">
+        <h1>Discover Your Next Favorite Craft Beer</h1>
+        <p>Find the best craft brews from independent breweries around the world.</p>
+        <form id="searchForm">
+            <input type="text" id="searchBar" placeholder="Search by beer name, style, or tag...">
+            <button type="submit">Find My Beer</button>
+        </form>
+    </section>
+
     <main>
+        <h2 class="section-title">Trending Beers 🍻</h2>
         <section id="beerList" class="beer-list"></section>
+        <h2 class="section-title">Breweries Near You 🏭</h2>
         <section id="breweryMap"></section>
     </main>
-    
-    <script src="script.js" defer></script>
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"></script>
+
+    <section class="hipster-vibes">
+        <h2>Craft Beer & Good Times</h2>
+        <div class="hipster-gallery">
+            <img src="https://source.unsplash.com/400x300/?hipster,beer" alt="Hipster enjoying beer">
+            <img src="https://source.unsplash.com/400x300/?craftbeer,brewery" alt="Craft brewery">
+            <img src="https://source.unsplash.com/400x300/?friends,beer" alt="Friends drinking beer">
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 My Next Beer. Independent. Bold. Brewed for the People.</p>
+    </footer>
+
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Search functionality coming soon! 🍺');
+        });
+    </script>
 </body>
 </html>
