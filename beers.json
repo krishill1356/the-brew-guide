@@ -8,7 +8,8 @@
         "ibu": "45",
         "description": "A smooth and creamy stout with roasted malt flavors.",
         "location": "Dublin, Ireland",
-        "tags": ["creamy", "roasty", "dark"]
+        "tags": ["creamy", "roasty", "dark"],
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Guinness.jpg"
     },
     {
         "id": 2,
@@ -19,7 +20,8 @@
         "ibu": "38",
         "description": "A classic American pale ale with pine and citrus notes.",
         "location": "Chico, California, USA",
-        "tags": ["hoppy", "citrusy", "balanced"]
+        "tags": ["hoppy", "citrusy", "balanced"],
+        "image_url": "https://www.sierranevada.com/wp-content/uploads/2020/04/PaleAle_Can_2020.png"
     },
     {
         "id": 3,
@@ -30,7 +32,8 @@
         "ibu": "23",
         "description": "A crisp and refreshing European lager.",
         "location": "Amsterdam, Netherlands",
-        "tags": ["crisp", "refreshing", "clean"]
+        "tags": ["crisp", "refreshing", "clean"],
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Heineken.jpg"
     },
     {
         "id": 4,
@@ -41,7 +44,8 @@
         "ibu": "45",
         "description": "A tropical and hoppy IPA with caramel and biscuit malt backbone.",
         "location": "Ellon, Scotland",
-        "tags": ["tropical", "hoppy", "caramel"]
+        "tags": ["tropical", "hoppy", "caramel"],
+        "image_url": "https://www.brewdog.com/cdn/shop/products/punk-ipa.png"
     },
     {
         "id": 5,
@@ -52,7 +56,8 @@
         "ibu": "30",
         "description": "A juicy and hazy New England IPA with pineapple and mango flavors.",
         "location": "Ellon, Scotland",
-        "tags": ["juicy", "hazy", "fruity"]
+        "tags": ["juicy", "hazy", "fruity"],
+        "image_url": "https://www.brewdog.com/cdn/shop/products/hazy-jane.png"
     },
     {
         "id": 6,
@@ -63,7 +68,8 @@
         "ibu": "45",
         "description": "A fruity and hoppy pale ale with tropical mango and citrus.",
         "location": "London, England",
-        "tags": ["fruity", "hoppy", "tropical"]
+        "tags": ["fruity", "hoppy", "tropical"],
+        "image_url": "https://www.beavertownbrewery.co.uk/cdn/shop/products/GammaRay.png"
     },
     {
         "id": 7,
@@ -74,7 +80,8 @@
         "ibu": "30",
         "description": "A crisp and refreshing session IPA with light citrus notes.",
         "location": "London, England",
-        "tags": ["light", "refreshing", "session"]
+        "tags": ["light", "refreshing", "session"],
+        "image_url": "https://www.beavertownbrewery.co.uk/cdn/shop/products/NeckOil.png"
     },
     {
         "id": 8,
@@ -85,7 +92,8 @@
         "ibu": "50",
         "description": "A hazy, juicy New England IPA with intense tropical fruit flavors.",
         "location": "Hebden Bridge, England",
-        "tags": ["hazy", "juicy", "tropical"]
+        "tags": ["hazy", "juicy", "tropical"],
+        "image_url": "https://www.vocationbrewery.com/cdn/shop/products/love-hate.png"
     },
     {
         "id": 9,
@@ -96,7 +104,8 @@
         "ibu": "10",
         "description": "A tart and refreshing gose with hints of fruit and sea salt.",
         "location": "Huddersfield, England",
-        "tags": ["sour", "refreshing", "fruity"]
+        "tags": ["sour", "refreshing", "fruity"],
+        "image_url": "https://www.magicrockbrewing.com/cdn/shop/products/SaltyKiss.png"
     },
     {
         "id": 10,
@@ -107,6 +116,7 @@
         "ibu": "55",
         "description": "A balanced IPA with citrus and floral notes.",
         "location": "Bakewell, England",
-        "tags": ["balanced", "citrusy", "floral"]
+        "tags": ["balanced", "citrusy", "floral"],
+        "image_url": "https://www.thornbridgebrewery.co.uk/cdn/shop/products/Jaipur.png"
     }
 ]
