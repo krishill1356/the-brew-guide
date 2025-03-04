@@ -1,0 +1,578 @@
+[
+    {
+        "id": 1,
+        "name": "Guinness Draught",
+        "brand": "Guinness",
+        "style": "Stout",
+        "abv": "4.2",
+        "ibu": "45",
+        "description": "A smooth and creamy stout with roasted malt flavors.",
+        "location": "Dublin, Ireland",
+        "tags": [
+            "creamy",
+            "roasty",
+            "dark"
+        ],
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Guinness.jpg",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Guinness+Draught",
+        "brewery_homepage": "https://www.google.com/search?q=Guinness+brewery"
+    },
+    {
+        "id": 2,
+        "name": "Sierra Nevada Pale Ale",
+        "brand": "Sierra Nevada",
+        "style": "Pale Ale",
+        "abv": "5.6",
+        "ibu": "38",
+        "description": "A classic American pale ale with pine and citrus notes.",
+        "location": "Chico, California, USA",
+        "tags": [
+            "hoppy",
+            "citrusy",
+            "balanced"
+        ],
+        "image_url": "https://www.sierranevada.com/wp-content/uploads/2020/04/PaleAle_Can_2020.png",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Sierra+Nevada+Pale+Ale",
+        "brewery_homepage": "https://www.google.com/search?q=Sierra+Nevada+brewery"
+    },
+    {
+        "id": 3,
+        "name": "Heineken",
+        "brand": "Heineken",
+        "style": "Lager",
+        "abv": "5.0",
+        "ibu": "23",
+        "description": "A crisp and refreshing European lager.",
+        "location": "Amsterdam, Netherlands",
+        "tags": [
+            "crisp",
+            "refreshing",
+            "clean"
+        ],
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Heineken.jpg",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Heineken",
+        "brewery_homepage": "https://www.google.com/search?q=Heineken+brewery"
+    },
+    {
+        "id": 4,
+        "name": "Punk IPA",
+        "brand": "BrewDog",
+        "style": "IPA",
+        "abv": "5.4",
+        "ibu": "45",
+        "description": "A tropical and hoppy IPA with caramel and biscuit malt backbone.",
+        "location": "Ellon, Scotland",
+        "tags": [
+            "tropical",
+            "hoppy",
+            "caramel"
+        ],
+        "image_url": "https://www.brewdog.com/cdn/shop/products/punk-ipa.png",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Punk+IPA",
+        "brewery_homepage": "https://www.google.com/search?q=BrewDog+brewery"
+    },
+    {
+        "id": 5,
+        "name": "Hazy Jane",
+        "brand": "BrewDog",
+        "style": "NEIPA",
+        "abv": "5.0",
+        "ibu": "30",
+        "description": "A juicy and hazy New England IPA with pineapple and mango flavors.",
+        "location": "Ellon, Scotland",
+        "tags": [
+            "juicy",
+            "hazy",
+            "fruity"
+        ],
+        "image_url": "https://www.brewdog.com/cdn/shop/products/hazy-jane.png",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Hazy+Jane",
+        "brewery_homepage": "https://www.google.com/search?q=BrewDog+brewery"
+    },
+    {
+        "id": 6,
+        "name": "Gamma Ray",
+        "brand": "Beavertown",
+        "style": "American Pale Ale",
+        "abv": "5.4",
+        "ibu": "45",
+        "description": "A fruity and hoppy pale ale with tropical mango and citrus.",
+        "location": "London, England",
+        "tags": [
+            "fruity",
+            "hoppy",
+            "tropical"
+        ],
+        "image_url": "https://www.beavertownbrewery.co.uk/cdn/shop/products/GammaRay.png",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Gamma+Ray",
+        "brewery_homepage": "https://www.google.com/search?q=Beavertown+brewery"
+    },
+    {
+        "id": 7,
+        "name": "Neck Oil",
+        "brand": "Beavertown",
+        "style": "Session IPA",
+        "abv": "4.3",
+        "ibu": "30",
+        "description": "A crisp and refreshing session IPA with light citrus notes.",
+        "location": "London, England",
+        "tags": [
+            "light",
+            "refreshing",
+            "session"
+        ],
+        "image_url": "https://www.beavertownbrewery.co.uk/cdn/shop/products/NeckOil.png",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Neck+Oil",
+        "brewery_homepage": "https://www.google.com/search?q=Beavertown+brewery"
+    },
+    {
+        "id": 8,
+        "name": "Love & Hate",
+        "brand": "Vocation Brewery",
+        "style": "NEIPA",
+        "abv": "7.2",
+        "ibu": "50",
+        "description": "A hazy, juicy New England IPA with intense tropical fruit flavors.",
+        "location": "Hebden Bridge, England",
+        "tags": [
+            "hazy",
+            "juicy",
+            "tropical"
+        ],
+        "image_url": "https://www.vocationbrewery.com/cdn/shop/products/love-hate.png",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Love+&+Hate",
+        "brewery_homepage": "https://www.google.com/search?q=Vocation+Brewery+brewery"
+    },
+    {
+        "id": 9,
+        "name": "Salty Kiss",
+        "brand": "Magic Rock Brewing",
+        "style": "Gose",
+        "abv": "4.1",
+        "ibu": "10",
+        "description": "A tart and refreshing gose with hints of fruit and sea salt.",
+        "location": "Huddersfield, England",
+        "tags": [
+            "sour",
+            "refreshing",
+            "fruity"
+        ],
+        "image_url": "https://www.magicrockbrewing.com/cdn/shop/products/SaltyKiss.png",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Salty+Kiss",
+        "brewery_homepage": "https://www.google.com/search?q=Magic+Rock+Brewing+brewery"
+    },
+    {
+        "id": 10,
+        "name": "Jaipur",
+        "brand": "Thornbridge Brewery",
+        "style": "IPA",
+        "abv": "5.9",
+        "ibu": "55",
+        "description": "A balanced IPA with citrus and floral notes.",
+        "location": "Bakewell, England",
+        "tags": [
+            "balanced",
+            "citrusy",
+            "floral"
+        ],
+        "image_url": "https://www.thornbridgebrewery.co.uk/cdn/shop/products/Jaipur.png",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Jaipur",
+        "brewery_homepage": "https://www.google.com/search?q=Thornbridge+Brewery+brewery"
+    },
+    {
+        "id": 11,
+        "name": "Neolithic",
+        "brand": "Northern Monk",
+        "style": "Salted Caramel Imperial Stout",
+        "abv": "8.5",
+        "ibu": "40",
+        "description": "Rich imperial stout with intense salted caramel notes.",
+        "location": "Leeds, England",
+        "tags": [
+            "stout",
+            "rich",
+            "dessert"
+        ],
+        "image_url": "",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Neolithic",
+        "brewery_homepage": "https://www.google.com/search?q=Northern+Monk+brewery"
+    },
+    {
+        "id": 12,
+        "name": "Faith",
+        "brand": "Northern Monk",
+        "style": "New England IPA",
+        "abv": "5.4",
+        "ibu": "35",
+        "description": "Juicy NEIPA with tropical fruit flavors.",
+        "location": "Leeds, England",
+        "tags": [
+            "hazy",
+            "juicy",
+            "tropical"
+        ],
+        "image_url": "",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Faith",
+        "brewery_homepage": "https://www.google.com/search?q=Northern+Monk+brewery"
+    },
+    {
+        "id": 13,
+        "name": "Sour Blackcurrant Pavlova",
+        "brand": "Vault City",
+        "style": "Fruited Sour",
+        "abv": "5.5",
+        "ibu": "10",
+        "description": "Dessert-inspired sour ale with blackcurrant and creamy notes.",
+        "location": "Edinburgh, Scotland",
+        "tags": [
+            "sour",
+            "fruity",
+            "dessert"
+        ],
+        "image_url": "",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Sour+Blackcurrant+Pavlova",
+        "brewery_homepage": "https://www.google.com/search?q=Vault+City+brewery"
+    },
+    {
+        "id": 14,
+        "name": "Rhubarb Crumble Sour",
+        "brand": "Vault City",
+        "style": "Pastry Sour",
+        "abv": "6.0",
+        "ibu": "12",
+        "description": "A sour ale capturing the essence of classic rhubarb crumble.",
+        "location": "Edinburgh, Scotland",
+        "tags": [
+            "sour",
+            "fruity",
+            "dessert"
+        ],
+        "image_url": "",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Rhubarb+Crumble+Sour",
+        "brewery_homepage": "https://www.google.com/search?q=Vault+City+brewery"
+    },
+    {
+        "id": 15,
+        "name": "Fruit Smoothie",
+        "brand": "Verdant",
+        "style": "Milkshake IPA",
+        "abv": "6.5",
+        "ibu": "25",
+        "description": "Creamy IPA packed with tropical fruit flavors.",
+        "location": "Falmouth, Cornwall",
+        "tags": [
+            "creamy",
+            "fruity",
+            "tropical"
+        ],
+        "image_url": "",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Fruit+Smoothie",
+        "brewery_homepage": "https://www.google.com/search?q=Verdant+brewery"
+    },
+    {
+        "id": 16,
+        "name": "Headband",
+        "brand": "Verdant",
+        "style": "New England IPA",
+        "abv": "5.5",
+        "ibu": "30",
+        "description": "Hazy IPA with vibrant citrus and tropical hop profile.",
+        "location": "Falmouth, Cornwall",
+        "tags": [
+            "hazy",
+            "citrusy",
+            "tropical"
+        ],
+        "image_url": "",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Headband",
+        "brewery_homepage": "https://www.google.com/search?q=Verdant+brewery"
+    },
+    {
+        "id": 17,
+        "name": "The Legendary Lightbulb",
+        "brand": "Deya",
+        "style": "Pale Ale",
+        "abv": "5.2",
+        "ibu": "35",
+        "description": "A bright, hoppy pale ale with excellent balance.",
+        "location": "Cheltenham, Gloucestershire",
+        "tags": [
+            "hoppy",
+            "balanced",
+            "bright"
+        ],
+        "image_url": "",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=The+Legendary+Lightbulb",
+        "brewery_homepage": "https://www.google.com/search?q=Deya+brewery"
+    },
+    {
+        "id": 18,
+        "name": "Into the Haze",
+        "brand": "Deya",
+        "style": "New England IPA",
+        "abv": "6.2",
+        "ibu": "40",
+        "description": "Intensely juicy NEIPA with massive hop character.",
+        "location": "Cheltenham, Gloucestershire",
+        "tags": [
+            "hazy",
+            "juicy",
+            "intense"
+        ],
+        "image_url": "",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Into+the+Haze",
+        "brewery_homepage": "https://www.google.com/search?q=Deya+brewery"
+    },
+    {
+        "id": 19,
+        "name": "Cosmic Ladder",
+        "brand": "Pollys",
+        "style": "Double IPA",
+        "abv": "8.0",
+        "ibu": "65",
+        "description": "A powerful double IPA with complex hop layers.",
+        "location": "Wales",
+        "tags": [
+            "strong",
+            "hoppy",
+            "complex"
+        ],
+        "image_url": "",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Cosmic+Ladder",
+        "brewery_homepage": "https://www.google.com/search?q=Pollys+brewery"
+    },
+    {
+        "id": 20,
+        "name": "Pale Modern",
+        "brand": "Pollys",
+        "style": "Pale Ale",
+        "abv": "5.5",
+        "ibu": "40",
+        "description": "Clean and crisp pale ale with bright hop character.",
+        "location": "Wales",
+        "tags": [
+            "crisp",
+            "hoppy",
+            "balanced"
+        ],
+        "image_url": "",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Pale+Modern",
+        "brewery_homepage": "https://www.google.com/search?q=Pollys+brewery"
+    },
+    {
+        "id": 21,
+        "name": "Bipolar",
+        "brand": "Omnipollo",
+        "style": "Imperial Stout",
+        "abv": "10.0",
+        "ibu": "50",
+        "description": "Rich and complex imperial stout with intense flavor profile.",
+        "location": "Stockholm, Sweden",
+        "tags": [
+            "stout",
+            "strong",
+            "rich"
+        ],
+        "image_url": "",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Bipolar",
+        "brewery_homepage": "https://www.google.com/search?q=Omnipollo+brewery"
+    },
+    {
+        "id": 22,
+        "name": "Moonby",
+        "brand": "Omnipollo",
+        "style": "Smoothie IPA",
+        "abv": "6.5",
+        "ibu": "30",
+        "description": "Creamy, fruit-laden IPA with unique brewing approach.",
+        "location": "Stockholm, Sweden",
+        "tags": [
+            "creamy",
+            "fruity",
+            "unique"
+        ],
+        "image_url": "",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Moonby",
+        "brewery_homepage": "https://www.google.com/search?q=Omnipollo+brewery"
+    },
+    {
+        "id": 23,
+        "name": "Life & Death",
+        "brand": "Vocation",
+        "style": "West Coast IPA",
+        "abv": "6.5",
+        "ibu": "60",
+        "description": "Bold and bitter West Coast style IPA with classic hop profile.",
+        "location": "Hebden Bridge, England",
+        "tags": [
+            "bitter",
+            "hoppy",
+            "bold"
+        ],
+        "image_url": "",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Life+&+Death",
+        "brewery_homepage": "https://www.google.com/search?q=Vocation+brewery"
+    },
+    {
+        "id": 24,
+        "name": "Pride & Joy",
+        "brand": "Vocation",
+        "style": "Session IPA",
+        "abv": "4.5",
+        "ibu": "40",
+        "description": "Light and refreshing session IPA with bright hop character.",
+        "location": "Hebden Bridge, England",
+        "tags": [
+            "light",
+            "refreshing",
+            "hoppy"
+        ],
+        "image_url": "",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Pride+&+Joy",
+        "brewery_homepage": "https://www.google.com/search?q=Vocation+brewery"
+    },
+    {
+        "id": 25,
+        "name": "Sweet Dephts",
+        "brand": "Brew York",
+        "style": "Dessert Stout",
+        "abv": "7.0",
+        "ibu": "35",
+        "description": "Decadent stout inspired by classic dessert flavors.",
+        "location": "York, England",
+        "tags": [
+            "stout",
+            "sweet",
+            "dessert"
+        ],
+        "image_url": "",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Sweet+Dephts",
+        "brewery_homepage": "https://www.google.com/search?q=Brew+York+brewery"
+    },
+    {
+        "id": 26,
+        "name": "Tonkoko",
+        "brand": "Brew York",
+        "style": "Pastry Stout",
+        "abv": "6.5",
+        "ibu": "30",
+        "description": "Rich pastry stout with coconut and vanilla notes.",
+        "location": "York, England",
+        "tags": [
+            "stout",
+            "sweet",
+            "rich"
+        ],
+        "image_url": "",
+        "purchase_link": "https://www.beerhawk.co.uk/search?q=Tonkoko",
+        "brewery_homepage": "https://www.google.com/search?q=Brew+York+brewery"
+    },
+    {
+        "id": 27,
+        "name": "Clwb Tropica",
+        "brand": "Tiny Rebel",
+        "style": "Tropical IPA",
+        "abv": "5.5",
+        "ibu": "45",
+        "description": "A vibrant and fruity IPA bursting with mango, pineapple, and passionfruit.",
+        "location": "Newport, Wales",
+        "tags": [
+            "tropical",
+            "fruity",
+            "juicy"
+        ],
+        "image_url": "https://www.tinyrebel.co.uk/wp-content/uploads/2021/02/Clwb-Tropica.png",
+        "purchase_link": "https://www.tinyrebel.co.uk/shop",
+        "brewery_homepage": "https://www.tinyrebel.co.uk"
+    },
+    {
+        "id": 28,
+        "name": "Soft & Juicy IPA",
+        "brand": "Cloudwater",
+        "style": "IPA",
+        "abv": "6.2",
+        "ibu": "40",
+        "description": "A hazy, soft, and juicy IPA with tropical fruit flavors.",
+        "location": "Manchester, England",
+        "tags": [
+            "hazy",
+            "juicy",
+            "soft"
+        ],
+        "image_url": "https://cloudwaterbrew.co/wp-content/uploads/2021/05/soft-juicy-ipa.png",
+        "purchase_link": "https://shop.cloudwaterbrew.co/",
+        "brewery_homepage": "https://cloudwaterbrew.co/"
+    },
+    {
+        "id": 29,
+        "name": "Sunshine Underground",
+        "brand": "Salopian",
+        "style": "Hazy Pale Ale",
+        "abv": "4.8",
+        "ibu": "35",
+        "description": "A smooth and juicy pale ale with bright citrus and tropical notes.",
+        "location": "Shropshire, England",
+        "tags": [
+            "hazy",
+            "juicy",
+            "citrusy"
+        ],
+        "image_url": "https://www.salopianbrewery.co.uk/wp-content/uploads/2022/08/Sunshine-Underground.jpg",
+        "purchase_link": "https://www.salopianbrewery.co.uk/shop",
+        "brewery_homepage": "https://www.salopianbrewery.co.uk"
+    },
+    {
+        "id": 30,
+        "name": "Rhythm & Brews",
+        "brand": "Deya",
+        "style": "West Coast IPA",
+        "abv": "6.5",
+        "ibu": "50",
+        "description": "A bold and bitter West Coast IPA with pine and resinous hop flavors.",
+        "location": "Cheltenham, Gloucestershire",
+        "tags": [
+            "bitter",
+            "hoppy",
+            "resinous"
+        ],
+        "image_url": "https://www.deyabrewery.com/wp-content/uploads/2022/07/rhythm-brews.jpg",
+        "purchase_link": "https://www.deyabrewery.com/shop",
+        "brewery_homepage": "https://www.deyabrewery.com"
+    },
+    {
+        "id": 31,
+        "name": "Raspberry Ripple",
+        "brand": "Vault City",
+        "style": "Fruited Sour",
+        "abv": "7.0",
+        "ibu": "10",
+        "description": "A luscious raspberry sour with creamy vanilla notes.",
+        "location": "Edinburgh, Scotland",
+        "tags": [
+            "sour",
+            "fruity",
+            "dessert"
+        ],
+        "image_url": "https://vaultcity.co.uk/wp-content/uploads/2021/05/raspberry-ripple.png",
+        "purchase_link": "https://vaultcity.co.uk/collections/all",
+        "brewery_homepage": "https://vaultcity.co.uk"
+    },
+    {
+        "id": 32,
+        "name": "Pineapple Express",
+        "brand": "Deya",
+        "style": "IPA",
+        "abv": "6.5",
+        "ibu": "50",
+        "description": "Tropical pineapple-forward IPA with a smooth finish.",
+        "location": "Cheltenham, Gloucestershire",
+        "tags": [
+            "tropical",
+            "fruity",
+            "hoppy"
+        ],
+        "image_url": "https://deyabrewery.com/wp-content/uploads/2021/06/Pineapple-Express.png",
+        "purchase_link": "https://deyabrewery.com/shop",
+        "brewery_homepage": "https://deyabrewery.com"
+    }
+]

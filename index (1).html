@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Next Beer | Find your next favourite beer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?rustic,wood,bar') no-repeat center center/cover;
+            color: #F5DEB3;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .logo {
+            font-family: 'Pacifico', cursive;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #E09F3E;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://source.unsplash.com/1600x600/?hipster,beard,tattoo,beer') no-repeat center center/cover;
+            padding: 120px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        #searchForm {
+            margin-top: 20px;
+        }
+
+        #searchBar {
+            padding: 12px;
+            width: 60%;
+            max-width: 400px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            outline: none;
+            background: #2C2C2C;
+            color: white;
+        }
+
+        button {
+            background: #E09F3E;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        button:hover {
+            background: #C07031;
+        }
+
+        /* Beer List */
+        .section-title {
+            font-family: 'Pacifico', cursive;
+            font-size: 2rem;
+            margin-top: 40px;
+        }
+
+        .beer-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .beer-card {
+            background: rgba(32, 32, 32, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            width: 320px;
+            box-shadow: 3px 5px 12px rgba(0,0,0,0.5);
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .beer-card img {
+            width: 100%;
+            border-radius: 10px;
+            max-height: 150px;
+            object-fit: cover;
+        }
+
+        .beer-card h3 {
+            color: #E09F3E;
+        }
+
+        .beer-card p {
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #E09F3E;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🍺 My Next Beer</div>
+    </header>
+
+    <section class="hero">
+        <h1>Find Your Next Favourite Beer</h1>
+        <p>Discover bold flavors, independent breweries, and the best beers based on your tastes.</p>
+        <form id="searchForm">
+            <input type="text" id="searchBar" placeholder="Search by beer name, style, or tag...">
+            <button type="submit">Find My Next Beer</button>
+        </form>
+    </section>
+
+    <main>
+        <h2 class="section-title">Your Recommendations 🍻</h2>
+        <section id="beerList" class="beer-list"></section>
+    </main>
+
+    <footer>
+        <p>© 2025 My Next Beer. Crafted with Passion. Designed by Kris Hill.</p>
+    </footer>
+
+    <script src="beer-search.js"></script>
+</body>
+</html>
