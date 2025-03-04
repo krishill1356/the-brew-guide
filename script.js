@@ -2,10 +2,7 @@ let beers = [];
 
 document.addEventListener("DOMContentLoaded", () => {
     fetch('beers.json')
-        .then(response => {
-            if (!response.ok) throw new Error("Failed to load beers.json");
-            return response.json();
-        })
+        .then(response => response.json())
         .then(data => {
             beers = data;
             console.log("Beers loaded successfully:", beers);
@@ -15,11 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('searchForm').addEventListener('submit', function (event) {
         event.preventDefault();
         searchBeer();
-    });
-    
-    document.getElementById('beerForm').addEventListener('submit', function (event) {
-        event.preventDefault();
-        addBeer();
     });
 });
 
@@ -33,7 +25,7 @@ function searchBeer() {
     const results = beers.filter(beer => 
         beer.name.toLowerCase().includes(query) || 
         beer.style.toLowerCase().includes(query) || 
-        beer.brand.toLowerCase().includes(query)
+        beer.tags.some(tag => tag.toLowerCase().includes(query))
     );
 
     displayResults(results);
@@ -58,29 +50,21 @@ function displayResults(results) {
             <p><strong>ABV:</strong> ${beer.abv}%</p>
             <p><strong>IBU:</strong> ${beer.ibu}</p>
             <p>${beer.description}</p>
+            <button onclick="findInPubs('${beer.location}')">Find in Pubs</button>
+            <button onclick="buyOnline('${beer.name}')">Buy Online</button>
         `;
         beerList.appendChild(beerCard);
     });
 }
 
-function addBeer() {
-    const name = document.getElementById('beerName').value.trim();
-    const brand = document.getElementById('beerBrand').value.trim();
-    const style = document.getElementById('beerStyle').value.trim();
-    const abv = document.getElementById('beerAbv').value.trim();
-    const ibu = document.getElementById('beerIbu').value.trim();
-    const description = document.getElementById('beerDescription').value.trim();
-    
-    if (!name || !brand || !style || !abv || !ibu || !description) {
-        alert("Please fill in all beer details!");
-        return;
-    }
-    
-    const newBeer = { name, brand, style, abv, ibu, description };
-    beers.push(newBeer);
-    
-    displayResults(beers);
-    document.getElementById('beerForm').reset();
+function findInPubs(location) {
+    const encodedLocation = encodeURIComponent(location);
+    window.open(`https://www.google.com/maps/search/pubs+serving+${encodedLocation}`);
+}
+
+function buyOnline(beerName) {
+    const encodedBeer = encodeURIComponent(beerName);
+    window.open(`https://www.google.com/search?q=buy+${encodedBeer}+beer+online`);
 }
 
 // Google Maps API
