@@ -1,23 +1,34 @@
 let beers = [];
 
 document.addEventListener("DOMContentLoaded", () => {
+    // Ensure beers.json loads correctly
     fetch('beers.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) throw new Error("Failed to load beers.json");
+            return response.json();
+        })
         .then(data => {
             beers = data;
+            console.log("Beers loaded successfully:", beers); // Debugging
         })
         .catch(error => console.error("Error loading beers.json:", error));
 
-    document.getElementById('searchBar').addEventListener('input', searchBeer);
+    // Attach event listener to button
+    document.getElementById('searchForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent form from reloading page
+        searchBeer();
+    });
 });
 
+// Function to search for beers
 function searchBeer() {
     const query = document.getElementById('searchBar').value.trim().toLowerCase();
+
     if (!query) {
-        displayResults([]);
+        displayResults([]); // Clear results if input is empty
         return;
     }
-    
+
     const results = beers.filter(beer => 
         beer.name.toLowerCase().includes(query) || 
         beer.style.toLowerCase().includes(query) || 
@@ -27,6 +38,7 @@ function searchBeer() {
     displayResults(results);
 }
 
+// Function to display search results
 function displayResults(results) {
     const beerList = document.getElementById('beerList');
     beerList.innerHTML = '';
@@ -51,13 +63,13 @@ function displayResults(results) {
     });
 }
 
-// Google Maps API
+// Google Maps API Initialization
 function initMap() {
     const breweryMapElement = document.getElementById("breweryMap");
     if (!breweryMapElement) return;
     
     const map = new google.maps.Map(breweryMapElement, {
-        center: { lat: 51.5074, lng: -0.1278 }, // Centered on London
+        center: { lat: 51.5074, lng: -0.1278 }, // London Default
         zoom: 10
     });
 }
