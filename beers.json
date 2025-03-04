@@ -159,4 +159,219 @@
         "ibu": "65",
         "description": "A hoppy American pale ale with pine and citrus notes."
     }
-]
+    {
+        "name": "Sofa King",
+        "brand": "BrewDog",
+        "style": "Double IPA",
+        "abv": "8.5",
+        "ibu": "75",
+        "description": "A bold and resinous double IPA with tropical and citrus notes."
+    },
+    {
+        "name": "Hop, Skip & Juice",
+        "brand": "Vocation Brewery",
+        "style": "Hazy Pale Ale",
+        "abv": "5.7",
+        "ibu": "30",
+        "description": "A juicy pale ale with vibrant citrus and tropical fruit flavors."
+    },
+    {
+        "name": "Dark Arts",
+        "brand": "Magic Rock Brewing",
+        "style": "Stout",
+        "abv": "6.0",
+        "ibu": "40",
+        "description": "A decadent stout with rich roasted malt and chocolate notes."
+    },
+    {
+        "name": "Gamma Ray",
+        "brand": "Beavertown",
+        "style": "American Pale Ale",
+        "abv": "5.4",
+        "ibu": "45",
+        "description": "A fruity and hoppy pale ale with tropical mango and citrus."
+    },
+    {
+        "name": "Neck Oil",
+        "brand": "Beavertown",
+        "style": "Session IPA",
+        "abv": "4.3",
+        "ibu": "30",
+        "description": "A crisp and refreshing session IPA with light citrus notes."
+    },
+    {
+        "name": "Love & Hate",
+        "brand": "Vocation Brewery",
+        "style": "NEIPA",
+        "abv": "7.2",
+        "ibu": "50",
+        "description": "A hazy, juicy New England IPA with intense tropical fruit flavors."
+    },
+    {
+        "name": "Salty Kiss",
+        "brand": "Magic Rock Brewing",
+        "style": "Gose",
+        "abv": "4.1",
+        "ibu": "10",
+        "description": "A tart and refreshing gose with hints of fruit and sea salt."
+    },
+    {
+        "name": "Liquid Light",
+        "brand": "Northern Monk",
+        "style": "Double Dry Hopped IPA",
+        "abv": "6.8",
+        "ibu": "50",
+        "description": "A heavily dry-hopped IPA with a balance of bitterness and fruit."
+    }
+    {
+        "name": "Dead Pony Club",
+        "brand": "BrewDog",
+        "style": "Session Pale Ale",
+        "abv": "3.8",
+        "ibu": "40",
+        "description": "A light and zesty session pale ale with tropical and citrus notes."
+    },
+    {
+        "name": "Hazy Jane",
+        "brand": "BrewDog",
+        "style": "NEIPA",
+        "abv": "5.0",
+        "ibu": "30",
+        "description": "A juicy and hazy New England IPA with pineapple and mango flavors."
+    },
+    {
+        "name": "Kingpin",
+        "brand": "BrewDog",
+        "style": "Lager",
+        "abv": "4.7",
+        "ibu": "22",
+        "description": "A crisp and refreshing lager with a dry, biscuity finish."
+    },
+    {
+        "name": "Lost Lager",
+        "brand": "BrewDog",
+        "style": "Pilsner",
+        "abv": "4.5",
+        "ibu": "30",
+        "description": "A clean and crisp pilsner brewed with Bavarian hops."
+    },
+    {
+        "name": "Heathen",
+        "brand": "Northern Monk",
+        "style": "IPA",
+        "abv": "7.2",
+        "ibu": "60",
+        "description": "A big, juicy IPA bursting with tropical hop flavors."
+    },
+    {
+        "name": "High Wire",
+        "brand": "Magic Rock Brewing",
+        "style": "West Coast Pale Ale",
+        "abv": "5.5",
+        "ibu": "55",
+        "description": "A dry and crisp pale ale with a hit of citrus and pine."
+    },
+    {
+        "name": "Calypso",
+        "brand": "Siren Craft Brew",
+        "style": "Berliner Weisse",
+        "abv": "4.0",
+        "ibu": "10",
+        "description": "A tart and refreshing Berliner Weisse with notes of citrus and gooseberry."
+    },
+    {
+        "name": "Broken Dream",
+        "brand": "Siren Craft Brew",
+        "style": "Breakfast Stout",
+        "abv": "6.5",
+        "ibu": "40",
+        "description": "A rich and smooth breakfast stout with coffee and chocolate notes."
+    },
+    {
+        "name": "Roadie",
+        "brand": "Signature Brew",
+        "style": "All-Night IPA",
+        "abv": "4.3",
+        "ibu": "35",
+        "description": "A light and refreshing IPA, designed for easy drinking."
+    },
+    {
+        "name": "Beavertown Lager",
+        "brand": "Beavertown",
+        "style": "Lager",
+        "abv": "4.4",
+        "ibu": "20",
+        "description": "A smooth and crisp lager with subtle citrus notes."
+    },
+    {
+        "name": "Hickory Clan Smoked Porter",
+        "brand": "Brew York",
+        "style": "Smoked Porter",
+        "abv": "5.5",
+        "ibu": "35",
+        "description": "A rich and smoky porter with hints of caramel and oak."
+    },
+    {
+        "name": "Cloudwater Helles",
+        "brand": "Cloudwater Brew Co.",
+        "style": "Helles Lager",
+        "abv": "4.8",
+        "ibu": "22",
+        "description": "A traditional Munich-style lager with a light and crisp finish."
+    },
+    {
+        "name": "Jaipur",
+        "brand": "Thornbridge Brewery",
+        "style": "IPA",
+        "abv": "5.9",
+        "ibu": "55",
+        "description": "A balanced IPA with citrus and floral notes."
+    },
+    {
+        "name": "Green Mountain",
+        "brand": "Thornbridge Brewery",
+        "style": "Hazy Vermont Session Ale",
+        "abv": "4.3",
+        "ibu": "30",
+        "description": "A tropical and juicy session ale with low bitterness."
+    },
+    {
+        "name": "Kaleidoscope",
+        "brand": "Wiper and True",
+        "style": "Pale Ale",
+        "abv": "4.2",
+        "ibu": "35",
+        "description": "A balanced and citrusy pale ale with a smooth finish."
+    },
+    {
+        "name": "Uprising Treason",
+        "brand": "Windsor & Eton Brewery",
+        "style": "West Coast IPA",
+        "abv": "5.8",
+        "ibu": "50",
+        "description": "A bold and bitter West Coast IPA with pine and resin flavors."
+    },
+    {
+        "name": "Beatnikz Republic Beach Bum",
+        "brand": "Beatnikz Republic",
+        "style": "Tropical Pale Ale",
+        "abv": "5.0",
+        "ibu": "40",
+        "description": "A tropical pale ale packed with pineapple and passionfruit flavors."
+    },
+    {
+        "name": "DIPA V",
+        "brand": "Cloudwater Brew Co.",
+        "style": "Double IPA",
+        "abv": "8.0",
+        "ibu": "65",
+        "description": "A juicy and hop-forward DIPA with citrus and stone fruit notes."
+    },
+    {
+        "name": "Sunshine Reggae",
+        "brand": "Big Smoke Brew Co.",
+        "style": "Pale Ale",
+        "abv": "4.5",
+        "ibu": "35",
+        "description": "A light and refreshing pale ale with notes of orange and pineapple."
+    }
