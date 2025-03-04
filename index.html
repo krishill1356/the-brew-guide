@@ -10,26 +10,13 @@
     <header>
         <h1>My Next Beer 🍻</h1>
         <form id="searchForm">
-            <label for="searchBar" class="visually-hidden">Search for a beer</label>
-            <input type="text" id="searchBar" placeholder="Enter a beer style or brand..." aria-label="Search beer">
-            <button type="submit">Find Beer</button>
+            <input type="text" id="searchBar" placeholder="Enter beer name, style, or tag..." aria-label="Search beer">
+            <button type="submit">Find My Next Beer</button>
         </form>
     </header>
     
     <main>
-        <section id="beerList"></section>
-        <section id="addBeer">
-            <h2>Add a New Beer</h2>
-            <form id="beerForm">
-                <input type="text" id="beerName" placeholder="Beer Name" required>
-                <input type="text" id="beerBrand" placeholder="Brand" required>
-                <input type="text" id="beerStyle" placeholder="Style" required>
-                <input type="number" id="beerAbv" placeholder="ABV %" step="0.1" required>
-                <input type="number" id="beerIbu" placeholder="IBU" required>
-                <textarea id="beerDescription" placeholder="Description" required></textarea>
-                <button type="submit">Add Beer</button>
-            </form>
-        </section>
+        <section id="beerList" class="beer-list"></section>
         <section id="breweryMap"></section>
     </main>
     
