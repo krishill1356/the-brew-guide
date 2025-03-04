@@ -120,21 +120,23 @@
             gap: 20px;
         }
 
-        .beer-item {
+        .beer-card {
             background: #1E1E1E;
             padding: 20px;
             border-radius: 10px;
-            width: 300px;
+            width: 320px;
             box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
-            text-align: left;
+            text-align: center;
         }
 
-        .beer-item img {
+        .beer-card img {
             width: 100%;
             border-radius: 10px;
+            max-height: 150px;
+            object-fit: cover;
         }
 
-        .beer-item h3 {
+        .beer-card h3 {
             margin: 10px 0;
         }
 
@@ -158,14 +160,6 @@
 <body>
     <header>
         <div class="logo">🍺 My Next Beer</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Beers</a></li>
-                <li><a href="#">Breweries</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
     </header>
 
     <section class="hero">
@@ -173,72 +167,19 @@
         <p>Find the best craft brews from independent breweries around the world.</p>
         <form id="searchForm">
             <input type="text" id="searchBar" placeholder="Search by beer name, style, or tag...">
-            <button type="submit">Find My Beer</button>
+            <button type="submit">Find My Next Beer</button>
         </form>
     </section>
 
     <main>
         <h2 class="section-title">Trending Beers 🍻</h2>
         <section id="beerList" class="beer-list"></section>
-        <h2 class="section-title">Breweries Near You 🏭</h2>
-        <section id="breweryMap"></section>
     </main>
 
     <footer>
         <p>© 2025 My Next Beer. Independent. Bold. Brewed for the People.</p>
     </footer>
 
-    <script>
-        document.getElementById('searchForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const query = document.getElementById('searchBar').value;
-            fetchBeers(query);
-        });
-
-        function fetchBeers(query) {
-            fetch(`https://api.punkapi.com/v2/beers?beer_name=${query}`)
-                .then(response => response.json())
-                .then(beers => displayBeers(beers))
-                .catch(error => console.error('Error fetching beers:', error));
-        }
-
-        function displayBeers(beers) {
-            const beerList = document.getElementById('beerList');
-            beerList.innerHTML = ''; // Clear previous results
-
-            if (beers.length === 0) {
-                beerList.innerHTML = '<p>No beers found. Try a different search.</p>';
-                return;
-            }
-
-            beers.forEach(beer => {
-                const beerItem = document.createElement('div');
-                beerItem.classList.add('beer-item');
-                beerItem.innerHTML = `
-                    <img src="${beer.image_url}" alt="${beer.name}" height="150">
-                    <h3>${beer.name}</h3>
-                    <p>${beer.tagline}</p>
-                    <p><strong>ABV:</strong> ${beer.abv}%</p>
-                `;
-                beerList.appendChild(beerItem);
-            });
-        }
-
-        function initMap() {
-            const map = new google.maps.Map(document.getElementById('breweryMap'), {
-                center: { lat: 51.5074, lng: -0.1278 }, // London default
-                zoom: 12,
-                styles: [{ featureType: "poi.business", stylers: [{ visibility: "off" }] }]
-            });
-
-            new google.maps.Marker({
-                position: { lat: 51.5074, lng: -0.1278 },
-                map,
-                title: "Example Brewery"
-            });
-        }
-    </script>
-
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"></script>
+    <script src="script.js"></script>
 </body>
 </html>
